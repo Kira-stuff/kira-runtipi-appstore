@@ -8,17 +8,23 @@ Ce dépôt contient des applications que j'ai intégrées et adaptées pour fonc
 
 ## 📦 Applications disponibles
 
-### 🗣️ KokoroTTS
+### 🗣️ KokoroTTS  
 **KokoroTTS** est une API FastAPI simple et rapide pour générer du texte en audio.  
 Basée sur Coqui TTS, elle permet de produire des fichiers `.wav` en local à partir de phrases en français ou anglais.  
 🔗 [Source](https://github.com/remsky/Kokoro-FastAPI)
 
-### 🎬 Short Video Maker
+---
+
+### 🎬 Short Video Maker  
 **Short Video Maker** permet de générer automatiquement des vidéos "shorts" à partir de texte, avec des images/videos issues de Pexels, une voix off et une bande sonore.  
 Parfait pour créer du contenu viral sans effort.  
 🔗 [Source](https://github.com/gyoridavid/short-video-maker)
 
-### Minio
-
 ---
 
+### 🧱 Baserow  
+**Baserow** est une alternative open-source à Airtable pour créer des bases de données en ligne collaboratives.  
+Interface web intuitive, API REST, hébergement local ou cloud.  
+🔗 [Site officiel](https://baserow.io)
+
+---
