@@ -1,31 +1,22 @@
-# Example App Store Template
+# 🧰 Runtipi Custom App Store
 
-This repository serves as a template for creating your own custom app store for the Runtipi platform. Use this as a starting point to create and share your own collection of applications.
+Bienvenue dans mon **App Store personnalisé pour [Runtipi](https://runtipi.io/)** — une plateforme de self-hosting moderne et accessible à tous.
 
-## Repository Structure
+Ce dépôt contient des applications que j'ai intégrées et adaptées pour fonctionner nativement avec Runtipi v4, avec support du **App Store Tipi** et de la configuration dynamique via l'interface web.
 
-- **apps/**: Contains individual app directories
+---
 
-  - Each app has its own folder (e.g., `whoami/`) with the following structure:
-    - `config.json`: App configuration file
-    - `docker-compose.json`: Docker setup for the app
-    - `metadata/`: Contains app visuals and descriptions
-      - `description.md`: Markdown description of the app
-      - `logo.jpg`: App logo image
+## 📦 Applications disponibles
 
-- **tests/**: Contains test files for the app store
+### 🗣️ KokoroTTS
+**KokoroTTS** est une API FastAPI simple et rapide pour générer du texte en audio.  
+Basée sur Coqui TTS, elle permet de produire des fichiers `.wav` en local à partir de phrases en français ou anglais.  
+🔗 [Source](https://github.com/remsky/Kokoro-FastAPI)
 
-  - `apps.test.ts`: Test suite for validating apps
+### 🎬 Short Video Maker
+**Short Video Maker** permet de générer automatiquement des vidéos "shorts" à partir de texte, avec des images/videos issues de Pexels, une voix off et une bande sonore.  
+Parfait pour créer du contenu viral sans effort.  
+🔗 [Source](https://github.com/gyoridavid/short-video-maker)
 
-## Getting Started
+---
 
-This repository is intended to serve as a template for creating your own app store. Follow these steps to get started:
-
-1. Click the "Use this template" button to create a new repository based on this template
-2. Customize the apps or add your own app folders in the `apps/` directory
-3. Test your app store by using it with Runtipi
-
-## Documentation
-
-For detailed instructions on creating your own app store, please refer to the official guide:
-[Create Your Own App Store Guide](https://runtipi.io/docs/guides/create-your-own-app-store)
