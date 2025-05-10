@@ -5,11 +5,10 @@
       "image": "gyoridavid/short-video-maker:latest-tiny",
       "isMain": true,
       "internalPort": "3123",
-      "env": {
+      "environment": {
         "LOG_LEVEL": "debug",
         "PEXELS_API_KEY": "${PEXELS_API_KEY}"
-      },
-      "restart": "unless-stopped"
+      }
     }
   ]
 }
