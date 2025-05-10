@@ -1,0 +1,28 @@
+{
+  "services": [
+    {
+      "name": "minio",
+      "image": "quay.io/minio/minio:latest",
+      "isMain": true,
+      "internalPort": "9000",
+      "ports": [
+        {
+          "port": 9001,
+          "description": "Port du tableau de bord"
+        }
+      ],
+      "environment": {
+        "MINIO_ROOT_USER": "${MINIO_ROOT_USER}",
+        "MINIO_ROOT_PASSWORD": "${MINIO_ROOT_PASSWORD}"
+      },
+      "volumes": [
+        {
+          "container": "/data",
+          "host": "minio-data"
+        }
+      ],
+      "command": "server /data --console-address :9001",
+      "restart": "unless-stopped"
+    }
+  ]
+}
