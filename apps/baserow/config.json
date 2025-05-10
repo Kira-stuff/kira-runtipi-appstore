@@ -19,7 +19,7 @@
   ],
   "created_at": 1715330400000,
   "updated_at": 1715330400000,
-  "dynamic_config": false,
+  "dynamic_config": true,
   "form_fields": [
     {
 	  "type": "text",
