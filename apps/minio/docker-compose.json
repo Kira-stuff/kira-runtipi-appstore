@@ -5,24 +5,20 @@
       "image": "quay.io/minio/minio:latest",
       "isMain": true,
       "internalPort": "9000",
-      "ports": [
-        {
-          "port": 9001,
-          "description": "Port du tableau de bord"
-        }
-      ],
+      "command": "server /data --console-address :9001",
       "environment": {
         "MINIO_ROOT_USER": "${MINIO_ROOT_USER}",
         "MINIO_ROOT_PASSWORD": "${MINIO_ROOT_PASSWORD}"
       },
       "volumes": [
         {
-          "container": "/data",
-          "host": "minio-data"
+          "hostPath": "minio-data",
+          "containerPath": "/data",
+          "readOnly": false,
+          "shared": false,
+          "private": false
         }
-      ],
-      "command": "server /data --console-address :9001",
-      "restart": "unless-stopped"
+      ]
     }
   ]
 }

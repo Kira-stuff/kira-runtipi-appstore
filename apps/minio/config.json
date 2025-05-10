@@ -22,7 +22,7 @@
   "dynamic_config": true,
   "form_fields": [
     {
-      "default": "admin"
+      "default": "admin",
 	  "type": "text",
       "env_variable": "MINIO_ROOT_USER",
       "label": "Nom d'utilisateur root",
