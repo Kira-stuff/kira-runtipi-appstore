@@ -5,9 +5,9 @@
       "image": "ghcr.io/remsky/kokoro-fastapi-cpu:v0.2.2",
       "isMain": true,
       "internalPort": "7860",
-      "volumes": [
-        "${APP_DATA}:/app/data"
-      ],
+      "volumes": {
+        "APP_DATA": "/app/data"
+      },
       "restart": "unless-stopped"
     }
   ]
