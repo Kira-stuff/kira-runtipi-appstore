@@ -22,12 +22,11 @@
   "dynamic_config": true,
   "form_fields": [
     {
-      "id": "PEXELS_API_KEY",
-      "name": "Clé API Pexels",
-      "type": "text",
+	  "type": "text",
+      "env_variable": "PEXELS_API_KEY",
+      "label": "Clé API Pexels",
       "required": true,
-      "default": "",
-      "description": "Clé API pour récupérer des images depuis Pexels"
+	  "max": 255
     }
   ]
 }
