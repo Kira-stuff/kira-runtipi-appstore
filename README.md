@@ -18,5 +18,7 @@ Basée sur Coqui TTS, elle permet de produire des fichiers `.wav` en local à pa
 Parfait pour créer du contenu viral sans effort.  
 🔗 [Source](https://github.com/gyoridavid/short-video-maker)
 
+### Minio
+
 ---
 

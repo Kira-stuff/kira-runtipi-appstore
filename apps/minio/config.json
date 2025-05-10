@@ -1,0 +1,41 @@
+{
+  "name": "MinIO",
+  "id": "minio",
+  "available": true,
+  "short_desc": "Stockage objet compatible S3, auto-hébergé.",
+  "author": "MinIO, adapté pour Runtipi",
+  "port": 9000,
+  "categories": [
+    "data"
+  ],
+  "description": "MinIO est un système de stockage objet haute performance compatible S3, idéal pour l'hébergement local de fichiers.",
+  "tipi_version": 2,
+  "version": "latest",
+  "source": "https://min.io/",
+  "exposable": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1715330400000,
+  "updated_at": 1715330400000,
+  "dynamic_config": true,
+  "form_fields": [
+    {
+      "default": "admin",
+	  "type": "text",
+      "env_variable": "MINIO_ROOT_USER",
+      "label": "Nom d'utilisateur root",
+      "required": true,
+	  "max": 255
+	  
+    },
+    {
+	  "type": "password",
+      "env_variable": "MINIO_ROOT_PASSWORD",
+      "label": "Mot de passe root",
+      "required": true,
+	  "max": 255
+    }
+  ]
+}
