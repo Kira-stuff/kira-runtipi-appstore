@@ -1,0 +1,32 @@
+{
+  "name": "Short Video Maker",
+  "id": "short-video-maker",
+  "available": true,
+  "short_desc": "Génère automatiquement des vidéos shorts à partir d'images et de textes.",
+  "author": "gyoridavid",
+  "port": 3123,
+  "categories": [
+    "media"
+  ],
+  "description": "Outil de génération automatisée de vidéos courtes en ligne avec des sources comme Pexels.",
+  "tipi_version": 2,
+  "version": "latest-tiny",
+  "source": "https://github.com/gyoridavid/short-video-maker",
+  "exposable": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1715330400000,
+  "updated_at": 1715330400000,
+  "dynamic_config": true,
+  "form_fields": [
+    {
+	  "type": "text",
+      "env_variable": "PEXELS_API_KEY",
+      "label": "Clé API Pexels",
+      "required": true,
+	  "max": 255
+    }
+  ]
+}
