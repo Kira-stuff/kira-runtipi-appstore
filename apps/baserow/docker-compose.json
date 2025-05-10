@@ -6,7 +6,7 @@
       "isMain": true,
       "internalPort": "80",
       "environment": {
-        "BASEROW_PUBLIC_URL": "http://host.docker.internal:85"
+        "BASEROW_PUBLIC_URL": "${BASEROW_PUBLIC_URL}"
       },
       "volumes": [
         {
