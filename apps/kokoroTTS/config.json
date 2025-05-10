@@ -2,7 +2,7 @@
   "name": "Kokoro TTS",
   "id": "kokoroTTS",
   "available": true,
-  "short_desc": "Serveur de synthèse vocale via FastAPI",
+  "short_desc": "Serveur de synthèse vocale via FastAPI CPU",
   "author": "Remsky",
   "port": 8880,
   "volumes": {
