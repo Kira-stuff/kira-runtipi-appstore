@@ -1,6 +1,6 @@
 {
   "name": "Kokoro TTS",
-  "id": "kokoroTTS",
+  "id": "kokorotts",
   "available": true,
   "short_desc": "Serveur de synthèse vocale via FastAPI CPU",
   "author": "Remsky",
