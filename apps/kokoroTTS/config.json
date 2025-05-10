@@ -9,7 +9,7 @@
     "APP_DATA": "/app/data"
   },
   "categories": [
-    "tools"
+    "ai"
   ],
   "description": "Kokoro TTS est une API REST permettant la synthèse vocale avec plusieurs moteurs TTS. Basé sur FastAPI.",
   "tipi_version": 2,
