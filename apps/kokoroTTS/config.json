@@ -1,0 +1,27 @@
+{
+  "name": "Kokoro TTS",
+  "id": "kokoro-tts",
+  "available": true,
+  "short_desc": "Serveur de synthèse vocale via FastAPI",
+  "author": "Remsky",
+  "port": 7860,
+  "volumes": {
+    "APP_DATA": "/app/data"
+  },
+  "categories": [
+    "tools"
+  ],
+  "description": "Kokoro TTS est une API REST permettant la synthèse vocale avec plusieurs moteurs TTS. Basé sur FastAPI.",
+  "tipi_version": 2,
+  "version": "v0.2.2",
+  "source": "https://github.com/remsky/Kokoro-FastAPI",
+  "exposable": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1715340000000,
+  "updated_at": 1715340000000,
+  "dynamic_config": true,
+  "form_fields": []
+}

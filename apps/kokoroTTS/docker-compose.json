@@ -1,0 +1,19 @@
+{
+  "version": "3.8",
+  "services": {
+    "kokoro-tts": {
+      "container_name": "kokoro-tts",
+      "image": "ghcr.io/remsky/kokoro-fastapi-cpu:v0.2.2",
+      "ports": [
+        "${APP_PORT}:7860"
+      ],
+      "volumes": [
+        "${APP_DATA}:/app/data"
+      ],
+      "restart": "unless-stopped"
+    }
+  },
+  "volumes": {
+    "kokoro_data": {}
+  }
+}
