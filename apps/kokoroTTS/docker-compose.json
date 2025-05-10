@@ -1,14 +1,14 @@
 {
-  "services": {
-    "kokoro-tts": {
+  "services": [
+    {
+      "name": "kokoro-tts",
       "image": "ghcr.io/remsky/kokoro-fastapi-cpu:v0.2.2",
-      "ports": [
-        "${APP_PORT}:7860"
-      ],
+      "isMain": true,
+      "internalPort": "7860",
       "volumes": [
         "${APP_DATA}:/app/data"
       ],
       "restart": "unless-stopped"
     }
-  }
+  ]
 }
