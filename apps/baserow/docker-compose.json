@@ -1,0 +1,22 @@
+{
+  "services": [
+    {
+      "name": "baserow",
+      "image": "baserow/baserow:1.32.5",
+      "isMain": true,
+      "internalPort": "80",
+      "environment": {
+        "BASEROW_PUBLIC_URL": "http://host.docker.internal:85"
+      },
+      "volumes": [
+        {
+          "hostPath": "/data/baserow",
+          "containerPath": "/baserow/data",
+          "readOnly": false,
+          "shared": false,
+          "private": false
+        }
+      ]
+    }
+  ]
+}

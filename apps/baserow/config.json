@@ -1,0 +1,23 @@
+{
+  "name": "Baserow",
+  "id": "baserow",
+  "available": true,
+  "short_desc": "Alternative open source à Airtable",
+  "author": "Baserow (adapté pour Runtipi)",
+  "port": 85,
+  "categories": [
+    "data"
+  ],
+  "description": "Baserow est un outil de base de données no-code open source permettant de créer, collaborer et automatiser facilement.",
+  "tipi_version": 2,
+  "version": "1.32.5",
+  "source": "https://baserow.io/",
+  "exposable": true,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1715330400000,
+  "updated_at": 1715330400000,
+  "dynamic_config": false
+}
