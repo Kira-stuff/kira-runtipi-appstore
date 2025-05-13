@@ -1,0 +1,65 @@
+{
+  "name": "No Code Architect Toolkit",
+  "id": "nca-toolkit",
+  "available": true,
+  "short_desc": "L'API de NCA Toolkit élimine les frais d'abonnement mensuels en regroupant les fonctionnalités API courantes dans une seule API gratuite.",
+  "author": "Stephen G. Pope",
+  "port": 8080,
+  "categories": ["automation"],
+  "description": "Application web permettant de concevoir et partager des architectures no-code, avec intégration MinIO/S3.",
+  "tipi_version": 2,
+  "version": "latest",
+  "source": "https://github.com/stephengpope/no-code-architects-toolkit",
+  "exposable": true,
+  "supported_architectures": ["amd64", "arm64"],
+  "created_at": 1715572800000,
+  "updated_at": 1715572800000,
+  "dynamic_config": true,
+  "form_fields": [
+    {
+      "type": "password",
+      "env_variable": "API_KEY",
+      "label": "API KEY",
+      "required": true,
+      "max": 255
+    },
+    {
+      "type": "text",
+      "env_variable": "S3_ENDPOINT_URL",
+      "label": "URL du serveur S3",
+      "default": "http://yourlocalip-or-S3:9000",
+      "required": true,
+      "max": 255
+    },
+    {
+      "type": "text",
+      "env_variable": "S3_ACCESS_KEY",
+      "label": "ACCESS KEY S3",
+      "required": true,
+      "max": 255
+    },
+    {
+      "type": "password",
+      "env_variable": "S3_SECRET_KEY",
+      "label": "SECRET KEY S3",
+      "required": true,
+      "max": 255
+    },
+    {
+      "type": "text",
+      "env_variable": "S3_BUCKET_NAME",
+      "label": "S3 BUCKET NAME",
+      "default": "nca-toolkit",
+      "required": true,
+      "max": 255
+    },
+    {
+      "type": "text",
+      "env_variable": "S3_REGION",
+      "label": "S3 Region (None for MinIO)",
+      "default": "None",
+      "required": true,
+      "max": 255
+    }
+  ]
+}
