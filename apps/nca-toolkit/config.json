@@ -5,7 +5,7 @@
   "short_desc": "L'API de NCA Toolkit élimine les frais d'abonnement mensuels en regroupant les fonctionnalités API courantes dans une seule API gratuite.",
   "author": "Stephen G. Pope",
   "port": 8080,
-  "categories": ["automation", "ia"],
+  "categories": ["automation"],
   "description": "Application web permettant de concevoir et partager des architectures no-code, avec intégration MinIO/S3.",
   "tipi_version": 2,
   "version": "latest",
