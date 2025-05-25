@@ -1,58 +1,11 @@
 {
   "services": [
     {
-      "name": "orpheus-fastapi",
-      "image": "nexslerdev/orpheus-fastapi-tts:latest",
+      "name": "orpheus-tts",
+      "image": "nexslerdev/orpheus-fastapi-tts",
       "isMain": true,
       "internalPort": "5005",
-      "restart": "unless-stopped",
-      "environment": {
-        "ORPHEUS_API_URL": "http://llama-cpp-server:5006/v1/completions"
-      },
-      "depends_on": [
-        {
-          "name": "llama-cpp-server",
-          "condition": "service_started"
-        }
-      ]
-    },
-    {
-      "name": "llama-cpp-server",
-      "image": "ghcr.io/ggml-org/llama.cpp:server",
-      "restart": "unless-stopped",
-      "command": "-m /models/tinyllama.gguf --host 0.0.0.0 --port 5006 --ctx-size 4096 --n-predict 4096 --threads 6 --threads-batch 6 --rope-scaling linear --no-mmap --no-slots --no-webui",
-      "volumes": [
-        {
-          "hostPath": "/data/orpheus/models",
-          "containerPath": "/models",
-          "readOnly": false,
-          "shared": false,
-          "private": false
-        }
-      ],
-      "depends_on": [
-        {
-          "name": "model-init",
-          "condition": "service_completed_successfully"
-        }
-      ]
-    },
-    {
-      "name": "model-init",
-      "image": "curlimages/curl:latest",
-      "restart": "no",
-      "user": "1000:1000",
-      "working_dir": "/app",
-      "command": "sh -c 'if [ ! -f /app/models/tinyllama.gguf ]; then echo \"Downloading model file...\"; wget -P /app/models https://huggingface.co/lex-au/tinyllama.gguf/resolve/main/tinyllama.gguf; else echo \"Model file already exists\"; fi'",
-      "volumes": [
-        {
-          "hostPath": "/data/orpheus/models",
-          "containerPath": "/app/models",
-          "readOnly": false,
-          "shared": false,
-          "private": false
-        }
-      ]
+      "restart": "unless-stopped"
     }
   ]
 }
