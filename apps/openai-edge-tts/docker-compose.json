@@ -1,0 +1,14 @@
+{
+  "services": [
+    {
+      "name": "openai-edge-tts",
+      "image": "travisvn/openai-edge-tts:latest",
+      "internalPort": "5050",
+      "isMain": true,
+      "restart": "unless-stopped",
+      "env": {
+        "API_KEY": "kiratts2025"
+      }
+    }
+  ]
+}

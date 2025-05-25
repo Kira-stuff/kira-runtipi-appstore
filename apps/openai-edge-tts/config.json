@@ -1,0 +1,18 @@
+{
+  "name": "EdgeTTS",
+  "id": "openai-edge-tts",
+  "available": true,
+  "short_desc": "Serveur TTS local basé sur Microsoft Edge TTS",
+  "author": "travisvn, adapté pour Runtipi",
+  "port": 5050,
+  "categories": ["ai"],
+  "description": "EdgeTTS fournit une API locale de synthèse vocale (TTS) basée sur les voix de Microsoft Edge.",
+  "tipi_version": 2,
+  "version": "latest",
+  "source": "https://github.com/travisvn/openai-edge-tts",
+  "exposable": true,
+  "supported_architectures": ["amd64"],
+  "created_at": 1716630000000,
+  "updated_at": 1716630000000,
+  "dynamic_config": true
+}
