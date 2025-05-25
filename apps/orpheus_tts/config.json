@@ -1,6 +1,6 @@
 {
   "name": "OrpheusTTS",
-  "id": "orpheus-tts",
+  "id": "orpheus_tts",
   "available": true,
   "short_desc": "Serveur TTS local basé sur LLaMA et FastAPI",
   "author": "Lex-au, adapté pour Runtipi",

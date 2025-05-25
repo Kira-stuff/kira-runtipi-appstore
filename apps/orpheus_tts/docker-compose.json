@@ -1,7 +1,7 @@
 {
   "services": [
     {
-      "name": "orpheus-tts",
+      "name": "orpheus_tts",
       "image": "nexslerdev/orpheus-fastapi-tts",
       "isMain": true,
       "internalPort": "5005",
